@@ -1,0 +1,1 @@
+python3 video_demo.py --video ${"C:\Users\Choudhary\POSE TRAINER\phormatics-master\video1.mp4"} --outdir examples/res --save_video
