@@ -1,3 +1,4 @@
+<Head>The</Head>
 Fitness and Technology are two of the fastest-growing industries in the world. Fitness reeled in an estimated $94 billion last year at an annual growth rate of 6.1%.
 Technology permeates the world, with the AI industry reigning as one of the fastest growing and the intersection of these two industries has created a whole new world of digital fitness.
 The Workout.ai is a Personal Workout AI Assistant based on employing AI and computer vision to build a personal fitness trainer. 
