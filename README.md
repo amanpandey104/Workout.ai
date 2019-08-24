@@ -7,4 +7,4 @@ The assistant will help the user in performing the exercises with maximum effici
 
 #Installation
 1. Get the code
-[git clone -b pytorch https://github.com/MVIG-SJTU/AlphaPose.git]
+'git clone -b pytorch https://github.com/MVIG-SJTU/AlphaPose.git'
