@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import cv2 as cv
 import numpy as np
+from subprocess import call
 def subject_capture():
     #Input Prompt 
     inp=int(input("""Please enter the Exercise you want to do:
@@ -194,7 +195,8 @@ def voice(thr_counter,thr_val):
 
 if __name__ == '__main__':
     inp = subject_capture()
-    !python video_demo.py --video "C:\Users\movva\Desktop\ML\Workout.ai\model\output\output.avi" --outdir C:\Users\movva\Desktop\ML\Workout.ai\model\output\alphapose\ --save_video  --vis --format open --sp
+    subprocess.call(['python','video_demo.py',video, "C:\Users\movva\Desktop\ML\Workout.ai\model\output\output.avi", outdir, "C:\Users\movva\Desktop\ML\Workout.ai\model\output\alphapose\", save_video,vis,format,open,sp])
+    #!python video_demo.py --video "C:\Users\movva\Desktop\ML\Workout.ai\model\output\output.avi" --outdir C:\Users\movva\Desktop\ML\Workout.ai\model\output\alphapose\ --save_video  --vis --format open --sp
     v_list = cosine_compare(r"C:\Users\movva\Desktop\ML\Workout.ai\model\output\alphapose\alphapose-results.json",r"C:\Users\movva\Desktop\ML\Workout.ai\model\examples\exercise\{}\alphapose-results.json".format(inp))
     thr = 0.8
     thr_counter = np.zeros(13) # counts for crossing threshold in a ccomparision
