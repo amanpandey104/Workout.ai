@@ -23,6 +23,7 @@ import cv2
 from pPose_nms import pose_nms, write_json
 
 args = opt
+print(args)
 args.dataset = 'coco'
 if not args.sp:
     torch.multiprocessing.set_start_method('forkserver', force=True)

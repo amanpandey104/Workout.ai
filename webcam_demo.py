@@ -34,6 +34,7 @@ def loop():
         n += 1
 
 if __name__ == "__main__":
+    s=100
     webcam = args.webcam
     mode = args.mode
     if not os.path.exists(args.outputpath):
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     sys.stdout.flush()
     im_names_desc =  tqdm(loop())
     batchSize = args.posebatch
-    for i in im_names_desc:
+    for i in range(s):
         try:
             start_time = getTime()
             with torch.no_grad():
@@ -101,7 +102,6 @@ if __name__ == "__main__":
 
                 hm = hm.cpu().data
                 writer.save(boxes, scores, hm, pt1, pt2, orig_img, im_name.split('/')[-1])
-
                 ckpt_time, post_time = getTime(ckpt_time)
                 runtime_profile['pn'].append(post_time)
             if args.profile:
@@ -122,4 +122,5 @@ if __name__ == "__main__":
         pass
     writer.stop()
     final_result = writer.results()
-    write_json(final_result, args.outputpath)
+    opt = write_json(final_result, args.outputpath)
+    print(opt)

@@ -1,1 +1,2 @@
-python3 video_demo.py --video ${"C:\Users\Choudhary\POSE TRAINER\phormatics-master\video1.mp4"} --outdir examples/res --save_video
+python video_demo.py --video "C:\Users\movva\Desktop\ML\Workout.ai\AlphaPose-pytorch\examples\demo\curls.mp4" --outdir examples/results/ --save_video  --vis --format open --sp
+python webcam_demo.py --webcam 0 --outdir examples/res --vis
