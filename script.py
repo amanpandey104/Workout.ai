@@ -5,7 +5,11 @@ import cv2 as cv
 import numpy as np
 def subject_capture():
     #Input Prompt 
-    inp=int(input("Please enter the Exercise you want to do :(1-4)"))
+    inp=int(input("""Please enter the Exercise you want to do:
+    					1. Jumping Jacks
+    					2. Pushups
+    					3. Mountain Climbers
+    					4. Squats"""))
     cap1 = cv2.VideoCapture(r"C:\Users\movva\Desktop\ML\Workout.ai\model\examples\exercise\{}\{}.mp4".format(inp,inp))
     rat1, frame1 = cap1.read()
     frame_count = cap1.get(cv2.CAP_PROP_FRAME_COUNT)
