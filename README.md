@@ -20,9 +20,9 @@ The assistant will help the user in performing the exercises with maximum effici
 
 ## USAGE: 
 3. Run  
-'''Shell
+```Shell
 python script.py
-'''
+```
 
 
 ## LINKS
